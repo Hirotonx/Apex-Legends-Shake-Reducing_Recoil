@@ -1,3 +1,4 @@
+"'https://github.com/Hirotonx/Apex-Legends-Shake-Reducing_Recoil'"
 import win32api
 from time import sleep,time
 Shake0=[[-2,2,-2,2,-2,-1,2,1],[3,-3,3,-3,2,2,-2,-2]]
@@ -47,6 +48,8 @@ def main():
                     sleep(0.001)
                     start = time()
                     Dou2()
+                    if right_click_state():
+                        temp=0
                     Dou1()
                     end = time()
                     temp+=end-start
