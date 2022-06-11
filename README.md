@@ -8,10 +8,9 @@ A script for reducing recoil based on win32API
 
 不知道会不会被ban
 
+2022.6.11添加了识别2-4 3 2 倍镜的能力，现在脚本会在高倍镜下抖枪（默认打开）
 
 缺点shortcoming:
-
-    这仅仅是个demo版本，缺少截图识别是否是高倍镜的能力。这会导致一倍镜手感很奇怪
     代码很乱
     
 使用方法：
@@ -21,5 +20,5 @@ A script for reducing recoil based on win32API
     end键推出程序
     
 需求：
-    需要安装win32api
+    需要安装win32api，PIL模块
 
