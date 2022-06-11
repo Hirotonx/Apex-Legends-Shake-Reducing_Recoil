@@ -2,6 +2,7 @@ import win32api
 from time import sleep,time
 from recognition import regulation_color
 Shake=[[-2,2,-2,2,-2,-1,2,1],[3,-3,3,-3,2,2,-2,-2]]
+Shake1=[[-1,1,-1,1,-1,1,-1,1],[2,-2,2,-2,2,-2,2,-2]]
 open_regulation=True#激活识别瞄准镜
 
 def left_click_state():#If the left mouse button has been pressed return True 返回左键是否按下
@@ -22,8 +23,8 @@ def dou():
         k=0
         if left_click_state() and not right_click_state()and open_regulation and regulation_color(): #此代码可以压前几枪
          while(k<4):
-            sleep(0.06)
-            win32api.mouse_event(0x0001, 0, 7)
+            sleep(0.05)
+            win32api.mouse_event(0x0001, 0, 5)
             k+=1
         if(k==4):
             break
@@ -33,16 +34,19 @@ def Dou2():#shake 抖动
     global Shake
     for i in range(0,4):
         if left_click_state() and not right_click_state()and open_regulation and regulation_color():
-            win32api.mouse_event(0x0001, Shake[0][i], Shake[1][i])
-            sleep(time2)
+            win32api.mouse_event(0x0001, Shake1[0][i], Shake1[1][i])
+            sleep(time1)
+
 def Dou1():
     time1=0.015
     time2=0.025
     global Shake
     for i in range(4,8):
         if left_click_state() and not right_click_state()and open_regulation and regulation_color():
-            win32api.mouse_event(0x0001, Shake[0][i], Shake[1][i])
-            sleep(time2)
+            win32api.mouse_event(0x0001, Shake1[0][i], Shake1[1][i])
+            sleep(time1)
+            if (i == 7):
+                win32api.mouse_event(0x0001, 0, 3)
 def main():
     global open_regulation
     while True:
@@ -60,7 +64,7 @@ def main():
                     end = time()
                     temp+=end-start
                     sleep(0.001)
-                    if temp >2.5 :
+                    if temp >3 :
                         break
                     if end_click_state():
                         return
