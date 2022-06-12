@@ -11,7 +11,8 @@ A script for reducing recoil based on win32API
 2022.6.11添加了在1080P分辨率识别2-4 3 2 倍镜的能力，现在脚本会在高倍镜下抖枪（默认打开）
 
 缺点shortcoming:
-    代码很乱
+    代码很乱，竞技场难以使用
+
     
 使用方法：
 
@@ -20,5 +21,5 @@ A script for reducing recoil based on win32API
     end键推出程序
     
 需求：
-    需要安装win32api，PIL模块
+    需要安装pywin32，PIL模块
 
