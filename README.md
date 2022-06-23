@@ -12,6 +12,7 @@ A script for reducing recoil based on win32API
 
 缺点shortcoming:
     代码很乱，竞技场难以使用
+    有些bug
 
     
 使用方法：
