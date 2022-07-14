@@ -26,3 +26,5 @@ A script for reducing recoil based on win32API
 
 图为20m 三倍镜 平行
 ![20m](https://user-images.githubusercontent.com/96516810/178994378-f7cdddc8-113d-4837-aecd-d936b4c01887.png)
+测试设置 dpi600 灵敏度5.0
+灵敏度不同可以调节列表shake1中的数值
