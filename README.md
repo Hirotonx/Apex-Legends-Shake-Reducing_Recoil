@@ -24,3 +24,4 @@ A script for reducing recoil based on win32API
 需求：
     需要安装pywin32，PIL模块
 
+![20m](https://user-images.githubusercontent.com/96516810/178994378-f7cdddc8-113d-4837-aecd-d936b4c01887.png)
